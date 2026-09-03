@@ -19,6 +19,10 @@ export default function SettingsScreen() {
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.content}>
+                  <View style={styles.header}>
+                    <Text style={styles.headerText}>SmartHome</Text>
+                    <View style={styles.headerUnderline} />
+                  </View>
           <Text style={styles.title}>Settings</Text>
 
           <View style={styles.settingsList}>
@@ -82,14 +86,30 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    paddingHorizontal: 28,
-    paddingTop: 58,
+    paddingHorizontal: 36,
+    paddingTop: 24,
+  },
+    header: {
+    alignSelf: 'flex-start',
+  },
+  headerText: {
+    color: '#4d64fb',
+    fontSize: 28,
+    fontWeight: '900',
+    lineHeight: 34,
+  },
+  headerUnderline: {
+    height: 3,
+    width: '100%',
+    backgroundColor: '#53b7f1',
+    marginTop: -2,
   },
   title: {
     color: '#f5f5f5',
-    fontSize: 32,
-    fontWeight: '400',
-    marginBottom: 56,
+    fontSize: 26,
+    fontWeight: '700',
+    marginBottom: 25,
+    marginTop: 60,
   },
   settingsList: {
     gap: 0,

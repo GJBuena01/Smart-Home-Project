@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   headerText: {
     color: '#4d64fb',
     fontSize: 28,
-    fontWeight: '700',
+    fontWeight: '900',
     lineHeight: 34,
   },
   headerUnderline: {
@@ -70,12 +70,11 @@ const styles = StyleSheet.create({
     marginTop: -2,
   },
   dashboardTitle: {
-    color: '#e8e8e8',
-    fontSize: 20,
-    fontWeight: '400',
-    textAlign: 'center',
-    marginTop: 70,
-    marginBottom: 22,
+    color: '#f2f2f2',
+    fontSize: 26,
+    fontWeight: '700',
+    marginBottom: 25,
+    marginTop: 60,
   },
   cardStack: {
     gap: 20,
@@ -84,8 +83,8 @@ const styles = StyleSheet.create({
     height: 56,
     borderRadius: 11,
     borderWidth: 1,
-    borderColor: '#a6a6a6',
-    backgroundColor: '#4a4a4a',
+    borderColor: '#7ab4ff',
+    backgroundColor: '#1b3e69',
     paddingHorizontal: 12,
     flexDirection: 'row',
     alignItems: 'center',
@@ -95,8 +94,8 @@ const styles = StyleSheet.create({
     height: 100,
     borderRadius: 11,
     borderWidth: 1,
-    borderColor: '#ffffff',
-    backgroundColor: '#4a4a4a',
+    borderColor: '#7ab4ff',
+    backgroundColor: '#1b3e69',
     paddingHorizontal: 12,
     flexDirection: 'row',
     alignItems: 'center',
@@ -109,7 +108,7 @@ const styles = StyleSheet.create({
   },
   cardTextRight: {
     color: '#f1f1f1',
-    fontSize: 20,
+    fontSize: 17,
     fontWeight: '900',
   },
 });

@@ -15,6 +15,10 @@ export default function ExploreScreen() {
   return (
     <SafeAreaView style={styles.screen}>
       <View style={styles.content}>
+                <View style={styles.header}>
+                  <Text style={styles.headerText}>SmartHome</Text>
+                  <View style={styles.headerUnderline} />
+                </View>
         
         <Text style={styles.title}>My Devices</Text>
 
@@ -71,13 +75,29 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     paddingHorizontal: 36,
-    paddingTop: 106,
+    paddingTop: 24,
+  },
+  header: {
+    alignSelf: 'flex-start',
+  },
+  headerText: {
+    color: '#4d64fb',
+    fontSize: 28,
+    fontWeight: '900',
+    lineHeight: 34,
+  },
+  headerUnderline: {
+    height: 3,
+    width: '100%',
+    backgroundColor: '#53b7f1',
+    marginTop: -2,
   },
   title: {
     color: '#f2f2f2',
-    fontSize: 29,
-    fontWeight: '400',
-    marginBottom: 54,
+    fontSize: 26,
+    fontWeight: '700',
+    marginBottom: 25,
+    marginTop: 60,
   },
   cardStack: {
     gap: 14,
